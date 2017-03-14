@@ -52,7 +52,7 @@ namespace WinFormKalmanRadar {
             if (line1.Count == 10) {
                 average /= 10;
             }
-             Console.WriteLine(line2[line2.Count - 1]);
+             Console.WriteLine(line1[line1.Count - 1] + " " + line2[line2.Count - 1]);
             if (freshBoardDel != null) {
                 this.Invoke(freshBoardDel, line1.Count / 100 * 100, 1770);
             }

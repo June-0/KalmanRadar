@@ -18,7 +18,7 @@ namespace WinFormKalmanRadar {
         /// <param name="vxk1k1">initial value of state x</param>
         /// <param name="rpk1k1">initial value of p(can't be 0)</param>
         public const int square = 100;
-        public KalmanSingle(double Q = 10, double R = 100, double vxk1k1 = 0, double rpk1k1 = 0.9) {
+        public KalmanSingle(double Q = 10, double R = 200, double vxk1k1 = 1700, double rpk1k1 = 1) {
             this.Q = Q;
             this.R = R;
             this.vxk1k1 = vxk1k1;
